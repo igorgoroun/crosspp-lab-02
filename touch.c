@@ -32,17 +32,17 @@ int main(int argc, char *argv[])
     for (int i = 1; i < dir_count - 1; i++) {
         strcat(dir_path, LNS);
         strcat(dir_path, dirs[i]);
-        unsigned char res = isdir(dir_path);
+        unsigned char res = dir_exists(dir_path);
         if (res == 0) {
-            makedir(dir_path);
+            dir_create(dir_path);
         }
     }
 
     strcat(dir_path, LNS);
     strcat(dir_path, filename);
-    unsigned char file_res = isfile(dir_path);
+    unsigned char file_res = file_exists(dir_path);
     if (file_res == 0) {
-        makefile(dir_path);
+        file_create(dir_path);
     } else {
         printf("Error: File [%s] already exists!%s", dir_path, LNE);
         return EXIT_FAILURE;

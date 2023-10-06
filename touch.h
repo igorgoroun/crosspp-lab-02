@@ -8,10 +8,6 @@
 #define FIRST_SLASH 0
 #endif
 
-#define isdir dir_exists
-#define makedir dir_create
-#define isfile file_exists
-#define makefile file_create
 #define MAX_DIR_LEN 64
 #define MAX_DIRS 16
 
