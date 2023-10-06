@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <stdio.h>
+#include "touch.h"
 
 // Implementation for windows
 unsigned char dir_exists(char *dir_path) {

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <sys/stat.h>
+#include "touch.h"
 
 // Implementation for unix systems
 unsigned char dir_exists(char *dir_path) {
